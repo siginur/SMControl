@@ -10,6 +10,7 @@
 		B37074FC21DCC8F80091EBAA /* SMControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37074F221DCC8F80091EBAA /* SMControl.framework */; };
 		B370750121DCC8F80091EBAA /* SMControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370750021DCC8F80091EBAA /* SMControlTests.swift */; };
 		B370750321DCC8F80091EBAA /* SMControl.h in Headers */ = {isa = PBXBuildFile; fileRef = B37074F521DCC8F80091EBAA /* SMControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B370750D21DCC9720091EBAA /* SMControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370750C21DCC9720091EBAA /* SMControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		B37074FB21DCC8F80091EBAA /* SMControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B370750021DCC8F80091EBAA /* SMControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMControlTests.swift; sourceTree = "<group>"; };
 		B370750221DCC8F80091EBAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B370750C21DCC9720091EBAA /* SMControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				B37074F521DCC8F80091EBAA /* SMControl.h */,
 				B37074F621DCC8F80091EBAA /* Info.plist */,
+				B370750C21DCC9720091EBAA /* SMControl.swift */,
 			);
 			path = SMControl;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					B37074F121DCC8F80091EBAA = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					B37074FA21DCC8F80091EBAA = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B370750D21DCC9720091EBAA /* SMControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +346,7 @@
 		B370750721DCC8F80091EBAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = merkova.SMControl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		B370750821DCC8F80091EBAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +399,7 @@
 		B370750A21DCC8F80091EBAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HU4P847GG9;
 				INFOPLIST_FILE = SMControlTests/Info.plist;
@@ -409,6 +418,7 @@
 		B370750B21DCC8F80091EBAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HU4P847GG9;
 				INFOPLIST_FILE = SMControlTests/Info.plist;
