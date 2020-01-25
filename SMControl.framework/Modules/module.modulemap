@@ -1,0 +1,11 @@
+framework module SMControl {
+  umbrella header "SMControl.h"
+
+  export *
+  module * { export * }
+}
+
+module SMControl.Swift {
+    header "SMControl-Swift.h"
+    requires objc
+}
